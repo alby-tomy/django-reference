@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{printf \"%-12s %s\\\\n\", $5, $9}')",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\django-reference\\\\shared\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\django-reference\\\\index\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\django-reference\\\\webdev-encyclopedia\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\django-reference\\\\django-templates\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\django-reference\\\\django-ultimate\")",
+      "PowerShell(Move-Item \"d:\\\\django-reference\\\\index\\\\index.html\" \"d:\\\\django-reference\\\\index.html\")",
+      "PowerShell(Move-Item \"d:\\\\django-reference\\\\index\\\\index.css\"  \"d:\\\\django-reference\\\\index.css\")",
+      "Bash(find d:/django-reference -not -path '*/\\\\.git/*' -not -path '*/.claude/*' -type f | sort)",
+      "Read(//d/django-reference/*/.git/**)",
+      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; Set-Location d:\\\\django-reference; git status)"
+    ]
+  }
+}
