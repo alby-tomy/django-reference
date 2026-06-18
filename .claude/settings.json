@@ -18,7 +18,10 @@
       "PowerShell($lines = \\(Get-Content \"d:\\\\django-reference\\\\system-design\\\\system-design.html\"\\).Count; Write-Host \"Total lines: $lines\")",
       "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; cd \"d:\\\\django-reference\"; git add system-design/system-design.html system-design/system-design.css index.html; git status)",
       "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; cd \"d:\\\\django-reference\"; git push origin main)",
-      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; cd \"d:\\\\django-reference\"; git status)"
+      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; cd \"d:\\\\django-reference\"; git status)",
+      "Bash(python3 _build_project_page.py)",
+      "Bash(python3 _trim_main.py)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
